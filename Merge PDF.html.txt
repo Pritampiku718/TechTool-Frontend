@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Merge PDF - TechTool</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Link to CSS -->
+</head>
+<body>
+
+    <!-- 🌐 Header -->
+    <header>
+        <nav>
+            <div class="logo"><a href="index.html">TechTool</a></div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Login</a></li>
+                <li><a href="#">Sign Up</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- 🛠️ Merge PDF Tool Section -->
+    <section class="merge-pdf">
+        <h1>Merge PDF Files</h1>
+        <p>Upload multiple PDF files, arrange them in order, and merge into one document.</p>
+
+        <!-- 📂 Upload Area -->
+        <div class="upload-area" id="upload-area">
+            <input type="file" id="file-input" multiple accept=".pdf" hidden>
+            <label for="file-input" class="upload-box">
+                <p>Drag & Drop your PDFs here or <span class="upload-btn">Browse</span></p>
+            </label>
+            <div id="file-list"></div> <!-- File previews will be shown here -->
+        </div>
+
+        <!-- 🔧 Merge Options -->
+        <div class="options">
+            <button id="merge-btn" disabled>Merge PDFs</button>
+        </div>
+
+        <!-- 📥 Download Area -->
+        <div id="download-section" style="display: none;">
+            <p>Merging complete! Download your merged PDF below.</p>
+            <a href="#" id="download-link" class="btn">Download Merged PDF</a>
+        </div>
+    </section>
+
+    <!-- 📩 Footer -->
+    <footer>
+        <p>&copy; 2025 TechTool. All rights reserved.</p>
+        <p>Contact us at <a href="mailto:pritampiku818@gmail.com">pritampiku818@gmail.com</a></p>
+    </footer>
+
+</body>
+</html>

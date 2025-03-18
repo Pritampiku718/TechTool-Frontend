@@ -1,0 +1,71 @@
+// 🛠️ Select Elements
+const uploadArea = document.getElementById("upload-area");
+const fileInput = document.getElementById("file-input");
+const fileNameDisplay = document.getElementById("file-name");
+const rotateSelect = document.getElementById("rotate-angle");
+const rotateBtn = document.getElementById("rotate-btn");
+const progressIndicator = document.getElementById("progress-indicator");
+const downloadSection = document.getElementById("download-section");
+const downloadLink = document.getElementById("download-link");
+
+let selectedFile = null;
+
+// 📂 Drag & Drop Event Listeners
+uploadArea.addEventListener("dragover", (e) => {
+    e.preventDefault();
+    uploadArea.classList.add("drag-over");
+});
+
+uploadArea.addEventListener("dragleave", () => {
+    uploadArea.classList.remove("drag-over");
+});
+
+uploadArea.addEventListener("drop", (e) => {
+    e.preventDefault();
+    uploadArea.classList.remove("drag-over");
+    handleFile(e.dataTransfer.files[0]);
+});
+
+// 📂 File Input Change Event
+fileInput.addEventListener("change", () => {
+    handleFile(fileInput.files[0]);
+});
+
+// 📂 Handle File Selection
+function handleFile(file) {
+    if (file && file.type === "application/pdf") {
+        selectedFile = file;
+        fileNameDisplay.innerText = file.name;
+        rotateBtn.disabled = false; // Enable rotate button
+    } else {
+        alert("❌ Only PDF files are allowed!");
+    }
+}
+
+// 🔄 Rotate PDF (Mockup)
+rotateBtn.addEventListener("click", async () => {
+    if (!selectedFile) {
+        alert("❗ Please upload a PDF file first.");
+        return;
+    }
+
+    const rotationAngle = rotateSelect.value;
+    rotateBtn.innerText = "Rotating...";
+    rotateBtn.disabled = true;
+    progressIndicator.style.display = "block";
+
+    // Simulating rotation process (Replace this with actual backend API call)
+    setTimeout(() => {
+        rotateBtn.innerText = "Rotate PDF";
+        rotateBtn.disabled = false;
+        progressIndicator.style.display = "none";
+        showDownloadLink();
+    }, 3000);
+});
+
+// 📥 Show Download Link (Mockup)
+function showDownloadLink() {
+    downloadSection.style.display = "block";
+    downloadLink.href = "#"; // Replace with actual rotated PDF URL
+    downloadLink.innerText = "Download Rotated PDF";
+}

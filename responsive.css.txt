@@ -1,0 +1,85 @@
+/* 🌍 General Responsive Fixes */
+* {
+    max-width: 100%;
+}
+
+/* 📱 Small Devices (Up to 600px) */
+@media (max-width: 600px) {
+    body {
+        padding: 1rem;
+    }
+
+    /* ✅ Header Fixes */
+    header {
+        flex-direction: column;
+        text-align: center;
+        padding: 1rem;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        text-align: center;
+        gap: 1rem;
+    }
+
+    /* ✅ Hero Section */
+    .hero {
+        padding: 2rem 1rem;
+        text-align: center;
+    }
+
+    .hero h1 {
+        font-size: 1.8rem;
+    }
+
+    .hero p {
+        font-size: 1rem;
+    }
+
+    /* ✅ Tools Grid */
+    .tool-grid {
+        grid-template-columns: 1fr; /* Single Column for Small Screens */
+    }
+
+    /* ✅ FAQ Section */
+    .faq h1 {
+        font-size: 1.5rem;
+    }
+
+    .faq-question {
+        font-size: 1rem;
+    }
+
+    /* ✅ Upload Box */
+    .upload-area {
+        padding: 1rem;
+    }
+
+    /* ✅ Buttons */
+    button, .btn {
+        font-size: 0.9rem;
+        padding: 0.6rem 1.2rem;
+    }
+}
+
+/* 📱 Medium Devices (601px - 900px) */
+@media (max-width: 900px) {
+    .tool-grid {
+        grid-template-columns: repeat(2, 1fr); /* Two Columns for Tablets */
+    }
+
+    .faq h1 {
+        font-size: 1.8rem;
+    }
+
+    .faq-question {
+        font-size: 1.1rem;
+    }
+}
+
+/* 📱 Large Screens (Above 900px) */
+@media (min-width: 900px) {
+    .tool-grid {
+        grid-template-columns: repeat(3, 1fr); /* Three Columns for Desktops */
+    }
+}

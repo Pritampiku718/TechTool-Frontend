@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQ - TechTool</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Link to CSS -->
+</head>
+<body>
+
+    <!-- 🌐 Header -->
+    <header>
+        <nav>
+            <div class="logo"><a href="index.html">TechTool</a></div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Login</a></li>
+                <li><a href="#">Sign Up</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- ❓ FAQ Section -->
+    <section class="faq">
+        <h1>Frequently Asked Questions</h1>
+        <p>Find answers to the most common questions about TechTool.</p>
+
+        <!-- 🔽 FAQ List -->
+        <div class="faq-container">
+
+            <div class="faq-item">
+                <button class="faq-question">What is TechTool? <span class="toggle-icon">+</span></button>
+                <div class="faq-answer">
+                    <p>TechTool is an online platform offering various PDF tools like merging, converting, and compressing files.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <button class="faq-question">Is TechTool free to use? <span class="toggle-icon">+</span></button>
+                <div class="faq-answer">
+                    <p>Yes! TechTool offers free tools for basic PDF processing. Premium features may be added in the future.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <button class="faq-question">Do I need to create an account? <span class="toggle-icon">+</span></button>
+                <div class="faq-answer">
+                    <p>No, most tools work without an account. However, signing up allows you to save settings and access more features.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <button class="faq-question">Are my files safe on TechTool? <span class="toggle-icon">+</span></button>
+                <div class="faq-answer">
+                    <p>Yes, we prioritize security. All uploaded files are deleted automatically after processing.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <button class="faq-question">What file formats are supported? <span class="toggle-icon">+</span></button>
+                <div class="faq-answer">
+                    <p>TechTool supports PDFs, JPGs, PNGs, Word, Excel, and PowerPoint files for conversions and editing.</p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- 📩 Footer -->
+    <footer>
+        <p>&copy; 2025 TechTool. All rights reserved.</p>
+        <p>Contact us at <a href="mailto:pritampiku818@gmail.com">pritampiku818@gmail.com</a></p>
+    </footer>
+
+</body>
+</html>

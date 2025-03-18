@@ -1,0 +1,201 @@
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Poppins:wght@400;600&display=swap');
+
+/* 🌐 Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: #1A1D2E; /* Dark Background */
+    color: #F5F7FA;
+    line-height: 1.6;
+}
+
+/* 🌐 Header */
+header {
+    background: #007BFF;
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.logo a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+}
+
+.nav-links li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+.nav-links li a:hover {
+    color: #F5F7FA;
+}
+
+/* 📂 Merge PDF Section */
+.merge-pdf {
+    text-align: center;
+    padding: 3rem 2rem;
+}
+
+.merge-pdf h1 {
+    font-size: 2.2rem;
+    font-weight: 600;
+}
+
+.merge-pdf p {
+    font-size: 1rem;
+    margin-bottom: 2rem;
+}
+
+/* 📂 Upload Area */
+.upload-area {
+    border: 2px dashed #007BFF;
+    background: #22273D;
+    padding: 2rem;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background 0.3s, border-color 0.3s;
+}
+
+.upload-area:hover {
+    background: #2A3048;
+    border-color: #0056b3;
+}
+
+.upload-box p {
+    font-size: 1rem;
+    color: #F5F7FA;
+}
+
+.upload-btn {
+    font-weight: 600;
+    color: #007BFF;
+    cursor: pointer;
+}
+
+/* 🗂️ File List */
+#file-list {
+    margin-top: 1rem;
+    text-align: left;
+    padding: 1rem;
+    border-radius: 5px;
+    background: #2A3048;
+}
+
+.file-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem;
+    background: #333A56;
+    border-radius: 5px;
+    margin-bottom: 5px;
+}
+
+.file-item span {
+    font-size: 0.9rem;
+}
+
+/* 🔘 Merge Button */
+#merge-btn {
+    margin-top: 1rem;
+    padding: 0.8rem 2rem;
+    background: #007BFF;
+    color: white;
+    font-size: 1rem;
+    font-weight: 600;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#merge-btn:disabled {
+    background: gray;
+    cursor: not-allowed;
+}
+
+#merge-btn:hover:not(:disabled) {
+    background: #0056b3;
+}
+
+/* 📥 Download Section */
+#download-section {
+    margin-top: 2rem;
+    padding: 1rem;
+    border-radius: 5px;
+    background: #2A3048;
+    text-align: center;
+}
+
+#download-link {
+    display: inline-block;
+    padding: 0.8rem 2rem;
+    background: #28A745;
+    color: white;
+    font-weight: 600;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background 0.3s;
+}
+
+#download-link:hover {
+    background: #218838;
+}
+
+/* 📩 Footer */
+footer {
+    text-align: center;
+    padding: 1.5rem;
+    background: #007BFF;
+    margin-top: 3rem;
+}
+
+footer p, footer a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 0.9rem;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* 📱 Responsive Design */
+@media (max-width: 768px) {
+    .nav-links {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .merge-pdf h1 {
+        font-size: 2rem;
+    }
+
+    .upload-area {
+        padding: 1.5rem;
+    }
+}
